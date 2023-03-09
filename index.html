@@ -9,10 +9,19 @@
         body {
             background-color: lightyellow;
         }
+        .bgcolor--blue {
+            background-color:lightblue;
+        }
     </style>
 </head>
-hi
 <body>
-    <p>My cat is <strong>very</strong> grumpy.</p>
+    안녕하세요! 반갑습니다
+    <button class="btn_bg">배경색상변경</button>
+    <script>
+        const btnBg = document.querySelector('.btn_bg');
+        btnBg.addEventListener('click', function () {
+            document.body.classList.toggle('bgcolor--blue');
+        })
+    </script>
 </body>
 </html>
